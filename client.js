@@ -17,15 +17,12 @@ const connect = function () {
     //   conn.write("Move: up");
     // }, 50);
   });
-
   conn.on("event name", () => {
     // code that does something
   });
-
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
-  
   conn.on('end', () => {
     console.log('disconnected from server');
   });
